@@ -1,5 +1,4 @@
 require "fezinha_generator/version"
-require 'byebug'
 require "nokogiri"
 require 'open-uri'
 
