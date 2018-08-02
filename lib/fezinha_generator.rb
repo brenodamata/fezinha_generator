@@ -5,11 +5,7 @@ require 'open-uri'
 module FezinhaGenerator
 
   def self.fezinha aposta=nil
-    if aposta.nil?
-      tamanho_da_fe = 6 # default menor possivel
-    else
-      tamanho_da_fe = aposta
-    end
+    tamanho_da_fe = aposta.nil? ? 6 : aposta
 
     fezinha = []
     while fezinha.size < tamanho_da_fe do
